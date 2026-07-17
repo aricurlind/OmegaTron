@@ -6,7 +6,7 @@
 Omega‑Tron is an autonomous robot vehicle developed as part of the M4000 project at Munich University of Applied Sciences.  
 The system integrates **lane detection**, **obstacle avoidance**, **object detection**, **robot‑arm control**, **navigation**, and **inductive charging** into one modular platform powered by a Raspberry Pi 4B and Arduino Nano.
 
-![Omega Tron Logo](doc\vids_pics\Logo1.png) ![Omega Tron](doc\vids_pics\OmegaTron.jpg)
+![Omega Tron Logo](doc/vids_pics/logo1.png) ![Omega Tron](doc/vids_pics/OmegaTron.jpg)
 
 ---
 
@@ -19,9 +19,9 @@ The robot can:
 - Identify objects (4 types of waste) using YOLOv3  
 - Pick up objects with a 4‑DOF robot arm  
 - Navigate using ROS odometry  
-- Automatically dock to a charging station using a QR‑code marker  
-
-![Modules](doc\vids_pics\Modules.png)
+- Automatically dock to a charging station using a QR‑code marker
+  
+![Modules](doc/vids_pics/2021-10-13 13_02_37-Projekt_M4000_Omega_Tron_aktuell.png)
 ---
 
 ## System Architecture  
@@ -78,33 +78,33 @@ Omega-Tron/
 ## Lane Detection  
 ### Classical Approach  
 
-![LaneDetection1](doc\vids_pics\LaneDetection1.png)
+![LaneDetection1](doc/vids_pics/LaneDetection1.png)
 
 - Canny edge detection  
 - Bird’s‑eye transformation  
 - Histogram‑based lane center estimation  
 - Hough transform for line detection  
 
-![LaneDetection1_Video](doc\vids_pics\Media1.mp4)
+![LaneDetection1_Video](doc/vids_pics/Media1.mp4)
 
 ### Deep Learning Approach  
 - Data collection during driving  
 - CNN training on lane images  
 - Output: steering angle prediction  
 
-![LaneDetection2](doc\vids_pics\LaneDetection2.png) ![LaneDetection3](doc\vids_pics\LaneDetection3.png)
+![LaneDetection2](doc/vids_pics/LaneDetection2.png) ![LaneDetection3](doc/vids_pics/LaneDetection3.png)
 
-![LaneDetection4](doc\vids_pics\LaneDetection4.png)
-![LaneDetection5](doc\vids_pics\LaneDetection5.png)
+![LaneDetection4](doc/vids_pics/LaneDetection4.png)
+![LaneDetection5](doc/vids_pics/LaneDetection5.png)
 
-![LaneDetection2_Video](doc\vids_pics\Media2.mp4)
-![LaneDetection3_Video](doc\vids_pics\Media3.mp4)
+![LaneDetection2_Video](doc/vids_pics/Media2.mp4)
+![LaneDetection3_Video](doc/vids_pics/Media3.mp4)
 
 ---
 
 ## Obstacle Avoidance  
 
-![DistanceSensors2](doc\vids_pics\DistanceSensors2.png) 
+![DistanceSensors2](doc/vids_pics/DistanceSensors2.png) 
 
 - 5 ultrasonic sensors controlled by Arduino Nano  
 - Encoded distance values sent to Raspberry Pi  
@@ -116,7 +116,7 @@ Omega-Tron/
 
 ## Object Detection  
 
-![WasteDetection](doc\vids_pics\WasteDetection.png) 
+![WasteDetection](doc/vids_pics/WasteDetection.png) 
 
 YOLOv3 identifies trash objects and provides bounding boxes.  
 Detected coordinates are forwarded to the robot arm module.
@@ -125,7 +125,7 @@ Detected coordinates are forwarded to the robot arm module.
 
 ## Robot Arm  
 
-![RobotArm](doc\vids_pics\Arm1.png) 
+![RobotArm](doc/vids_pics/Arm1.png) 
 
 
 - 4 degrees of freedom  
@@ -133,7 +133,7 @@ Detected coordinates are forwarded to the robot arm module.
 - PCA9685 for precise PWM control  
 - Automated grasping based on object position  
 
-![RobotArm_Video](doc\vids_pics\Media4.mp4) 
+![RobotArm_Video](doc/vids_pics/Media4.mp4) 
 
 ---
 
