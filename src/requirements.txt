@@ -1,0 +1,15 @@
+# Kernabhängigkeiten für den Betrieb auf dem Raspberry Pi.
+# RPi.GPIO und Adafruit_GPIO sind nur auf echter Pi-Hardware installierbar;
+# für Entwicklung/Tests auf einem PC siehe requirements-dev.txt.
+
+numpy>=1.23
+opencv-python>=4.7
+pyserial>=3.5
+pandas>=1.5
+matplotlib>=3.6
+scikit-learn>=1.2
+imgaug>=0.4.0
+tensorflow>=2.11
+pygame>=2.1
+RPi.GPIO>=0.7.1; platform_machine == "armv7l" or platform_machine == "aarch64"
+Adafruit-GPIO>=1.0.3; platform_machine == "armv7l" or platform_machine == "aarch64"

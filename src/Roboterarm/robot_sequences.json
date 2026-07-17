@@ -1,0 +1,45 @@
+{
+  "Start": [
+    ["Huefte", 410],
+    ["Schulter", 450],
+    ["Ellbogen", 500],
+    ["Ellbogen", 550],
+    ["Ellbogen", 600],
+    ["Schulter", 300]
+  ],
+  "Greifen": [
+    ["Ellbogen", 550],
+    ["Schulter", 450],
+    ["Ellbogen", 500],
+    ["Ellbogen", 400],
+    ["Greifer", 400],
+    ["Schulter", 620],
+    ["Ellbogen", 300],
+    ["Greifer", 160]
+  ],
+  "Wegwerfen": [
+    ["Greifer", 150],
+    ["Schulter", 600],
+    ["Schulter", 525],
+    ["Schulter", 450],
+    ["Ellbogen", 500],
+    ["Ellbogen", 550],
+    ["Ellbogen", 600],
+    ["Schulter", 300],
+    ["Huefte", 550],
+    ["Huefte", 750],
+    ["Ellbogen", 550],
+    ["Schulter", 450],
+    ["Ellbogen", 500],
+    ["Ellbogen", 400],
+    ["Schulter", 620],
+    ["Ellbogen", 300],
+    ["Greifer", 400],
+    ["Schulter", 450],
+    ["Ellbogen", 500],
+    ["Ellbogen", 550],
+    ["Ellbogen", 600],
+    ["Schulter", 300],
+    ["Huefte", 410]
+  ]
+}
